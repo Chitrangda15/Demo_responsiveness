@@ -1,0 +1,47 @@
+
+body, html {
+    height: 100%;
+
+    /* The image used */
+    background-image: url("./images/main_background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+  text-align: center;
+  margin: 0%;
+  font-family: 'Architects Daughter', cursive;
+  color: rgb(9, 51, 111);
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 100px 100px;
+  gap: 20px;
+
+
+}
+div >.first, #c1{
+  grid-column: span 2;
+}
+.card{
+  background-color: rgb(212, 196, 227);
+}
+
+@media (max-width:600px)
+{
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 100px 100px;
+    gap: 20px;
+  }
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <link href="./style.css" rel="stylesheet">
+  <style>
+    .flex-container {
+      display: flex ;
+     
+    }
+
+
+    .card {
+      background-color:rgb(123, 206, 217);
+      border: 20px solid  #e6e6e6;e;
+      height: 100px;
+      flex: 4;
+    
+    }
+
+    .first {
+      flex: 2;
+    }
+
+    .second {
+      flex: 2;
+    }
+    p{
+      text-decoration: solid;
+      font-family: cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Flexbox</h1>
+  <div class="flex-container">
+    <div class="first card"> <p>First name</p></div>
+    <div class="second card"><p>Last name</p></div>
+    <div class="card"><p>Address</p></div>
+    <div class="card"><p>Mobile</p></div>
+  </div>
+
+
+</body>
+
+</html>
